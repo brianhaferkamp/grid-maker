@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Maker // CSS Grid Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<div id="app">
+  <section class="form">
+    <h1 class="app-title">Grid Maker</h1>
+    <p class="form-intro">Input values to build a grid with CSS Grid Layout</p>
+    <p>
+      <label>Number of grid items <i class="zmdi zmdi-help help help-grid-items-number"></i></label>
+    </p>
+    <p>
+      <input class="grid-items-number" type="text" name="grid-items-number" required="required"/>
+    </p>
+    <p>
+      <label>Grid Wrapper Class <i class="zmdi zmdi-help help help-grid-wrapper-class"></i></label>
+    </p>
+    <p>
+      <input class="grid-wrapper-class" type="text" name="grid-wrapper-class" placeholder="ex: grid-wrapper" required="required"/>
+    </p>
+    <p>
+      <label>Grid Columns <i class="zmdi zmdi-help help help-grid-cols"></i></label>
+    </p>
+    <p>
+      <input class="grid-cols" type="text" name="grid-cols" placeholder="repeat() is supported"/>
+    </p>
+    <p>
+      <label>Grid Rows <i class="zmdi zmdi-help help help-grid-rows"></i></label>
+    </p>
+    <p>
+      <input class="grid-rows" type="text" name="grid-rows" placeholder="repeat() is supported"/>
+    </p>
+    <p>
+      <label>Grid Gap <i class="zmdi zmdi-help help help-grid-gap"></i></label>
+    </p>
+    <p>
+      <input class="grid-gap" type="text" name="grid-gap"/>
+    </p>
+    <p>
+      <button class="form-get-code">Get Code</button>
+    </p>
+    <p>
+      <button class="form-reset">Reset</button>
+    </p>
+  </section>
+  <section id="grid"></section>
+</div>
+<div class="popup hide">
+  <div class="popup-inner">
+    <div class="popup-text"></div>
+    <div class="popup-button">
+      <button>Close</button>
+    </div>
+  </div>
+</div>
+<section class="code-output">
+  <div class="html hide">
+    <h1>HTML</h1><code>
+      <div class="html-output"></div></code>
+  </div>
+  <div class="css hide">
+    <h1>CSS</h1><code></code>
+  </div>
+</section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+#app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+label i {
+  cursor: pointer;
+  color: #999;
+}
+
+.form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 250px;
+          flex: 0 1 250px;
+  margin-right: 2rem;
+}
+.form button {
+  background: #ddd;
+  border: 0;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: background 200ms ease;
+  transition: background 200ms ease;
+  margin: 2rem 0 2rem;
+}
+.form button:hover {
+  background: #ccc;
+}
+.form input {
+  padding: 5px 2px;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  /* Chrome/Opera/Safari */
+  /* Firefox 19+ */
+  /* IE 10+ */
+  /* Firefox 18- */
+}
+.form input::-webkit-input-placeholder {
+  color: #bbb;
+}
+.form input::-moz-placeholder {
+  color: #bbb;
+}
+.form input:-ms-input-placeholder {
+  color: #bbb;
+}
+.form input:-moz-placeholder {
+  color: #bbb;
+}
+
+.form-intro {
+  margin-bottom: 3rem;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  width: 100%;
+}
+
+.grid-item {
+  background: pink;
+}
+
+.code-output {
+  margin: 3rem 0 3rem 245px;
+}
+.code-output code {
+  display: block;
+  background: #eee;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.html-output #grid {
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup-inner {
+  background-color: white;
+  padding: 1rem;
+  width: 50vw;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.popup-text h2 {
+  margin: 0 0 1rem;
+}
+
+.popup-button {
+  text-align: right;
+}
+.popup-button button {
+  background: #eee;
+  border: 0;
+  padding: 1rem;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: background 200ms ease;
+  transition: background 200ms ease;
+}
+.popup-button button:hover {
+  background: #ccc;
+}
+
+.hide {
+  display: none;
+}
