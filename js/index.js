@@ -46,6 +46,37 @@ function buildGrid() {
     });
     console.log('Grid Columns = ' + gridCol);
   });
+  
+  
+  // quick columns buttons
+  
+  $('.one-column').on('click', function() {
+      gridCol = '1fr';
+      $('.grid-cols').val(gridCol);
+      $('.' + gridWrapClass).css({
+      'grid-template-columns' : '' + gridCol + ''
+      });
+      console.log('Grid Columns = ' + gridCol); 
+  });
+  
+  $('.two-column').on('click', function() {
+      gridCol = '1fr 1fr';
+      $('.grid-cols').val(gridCol);
+      $('.' + gridWrapClass).css({
+      'grid-template-columns' : '' + gridCol + ''
+      });
+      console.log('Grid Columns = ' + gridCol); 
+  });
+  
+  $('.three-column').on('click', function() {
+      gridCol = '1fr 1fr 1fr';
+      $('.grid-cols').val(gridCol);
+      $('.' + gridWrapClass).css({
+      'grid-template-columns' : '' + gridCol + ''
+      });
+      console.log('Grid Columns = ' + gridCol); 
+  });
+ 
 
   $('.grid-rows').on('blur', function() {
     var $this = $(this);
@@ -139,7 +170,6 @@ function buildGrid() {
 buildGrid();
 
 
-
 // Popup
 
 $('label i').on('click', function() {
@@ -151,7 +181,7 @@ $('label i').on('click', function() {
   } else if ($this.is('.help-grid-wrapper-class')) {
     $('.popup-text').html('<h2>Grid Wrapper Class</h2><p><strong>This value is required.</strong> Type a unique CSS class name that will be used for the container element that holds the grid items. Only type the name. There is no need to add a period at the beginning of the class name.</p><p>Examples:</p><p><code>grid</code><br><code>grid-wrapper</code><br><code>gridContainer</code></p>');
   } else if ($this.is('.help-grid-cols')) {
-    $('.popup-text').html('<h2>Grid Columns</h2><p>How many columns do you want for your grid? Type in the column structure you want using the same values you would use in the <code>grid-template-columns</code> property.</p><p>Example of three column grid with equal columns:</p><p><code>1fr 1fr 1fr</code><br><code>repeat(3, 1fr)</code></p>');
+    $('.popup-text').html('<h2>Grid Columns</h2><p>How many columns do you want for your grid? Type in the column structure you want using the same values you would use in the <code>grid-template-columns</code> property. You can also click on the quick column buttons to choose a basic one-, two-, or three-column grid.</p><p>Example of three column grid with equal columns:</p><p><code>1fr 1fr 1fr</code><br><code>repeat(3, 1fr)</code></p>');
   } else if ($this.is('.help-grid-rows')) {
     $('.popup-text').html('<h2>Grid Rows</h2><p>CSS Grid will automatically lay out the grid items using the number of columns you specified. If you need a specific row structure, type in the row structure you want using the same values you would use in the <code>grid-template-rows</code> property. The default value is <code>auto</code>.</p><p>Example of grid with equal height rows:</p><p><code>1fr 1fr 1fr</code><br><code>repeat(3, 1fr)</code></p>');
   } else if ($this.is('.help-grid-gap')) {
