@@ -14,16 +14,14 @@ function buildGrid() {
       $('#grid').html('');
     }
   });
-   
-  // $('.html pre code').append().text('<div id="grid"></div>');
-  
+     
   $('.grid-items-number').on('keyup', function() {
     var $this = $(this);
     gridItems = $this.val();
     
     // build grid items
     for (var i=0; i<gridItems; i++) {
-      $('#grid').append('<div class="grid-item"></div>');
+      $('#grid').append('<article class="grid-item"></article>');
     }
     console.log('Grid Items = ' + gridItems);
   });
@@ -134,7 +132,7 @@ function buildGrid() {
     // process HTML
     var outputCode = $('#grid').clone().html();
     $('.html-output').append(outputCode);
-    $('.html-output .grid-item').wrapAll('<div id="grid" class="' + gridWrapClass + '" />');
+    $('.html-output .grid-item').wrapAll('<section id="grid" class="' + gridWrapClass + '" />');
     outputCode = $('.html-output').html();
     var safe = outputCode.replace(/</g,"&lt;").replace(/>/g,"&gt;");
     $('.html-output').append(safe);

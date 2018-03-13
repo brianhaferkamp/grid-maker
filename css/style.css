@@ -61,6 +61,15 @@ label i {
   color: #bbb;
 }
 
+.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.share div {
+  margin: 0.5rem;
+}
+
 .quick-grid {
   display: -webkit-box;
   display: -ms-flexbox;
