@@ -1,0 +1,63 @@
+#app
+  section.form
+    h1.app-title Grid Maker
+    p.form-intro Input values to build a grid with CSS Grid Layout
+        
+    p
+      label Number of grid items <i class="zmdi zmdi-help help help-grid-items-number"></i>
+    p
+      input.grid-items-number(type="text", name="grid-items-number", required)
+    p
+      label Grid Wrapper Class <i class="zmdi zmdi-help help help-grid-wrapper-class"></i>
+    p
+      input.grid-wrapper-class(type="text", name="grid-wrapper-class", placeholder="ex: grid-wrapper", required)
+    p
+      label Grid Columns <i class="zmdi zmdi-help help help-grid-cols"></i>
+      
+    .quick-grid
+      article.quick-grid-group.one-column
+        p.quick-grid-item
+      article.quick-grid-group.two-column
+        p.quick-grid-item
+        p.quick-grid-item
+      article.quick-grid-group.three-column
+        p.quick-grid-item
+        p.quick-grid-item
+        p.quick-grid-item
+    p
+      input.grid-cols(type="text", name="grid-cols", placeholder="repeat() is supported")
+      
+    
+    p
+      label Grid Rows <i class="zmdi zmdi-help help help-grid-rows"></i>
+    p
+      input.grid-rows(type="text", name="grid-rows", placeholder="repeat() is supported")
+    p
+      label Grid Gap <i class="zmdi zmdi-help help help-grid-gap"></i>
+    p
+      input.grid-gap(type="text", name="grid-gap")
+    //- p
+    //-   label Grid Width <i class="zmdi zmdi-help help help-grid-width"></i>
+    //- p
+    //-   input.grid-width(type="text", name="grid-width")
+    p
+      button.form-get-code Get Code
+    p
+      button.form-reset Reset
+
+  section#grid
+  
+.popup.hide
+  .popup-inner
+    .popup-text
+    .popup-button
+      button Close
+      
+section.code-output
+  .html.hide
+    h1 HTML
+    code
+      .html-output
+  .css.hide
+    h1 CSS
+    code

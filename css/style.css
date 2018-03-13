@@ -61,6 +61,60 @@ label i {
   color: #bbb;
 }
 
+.quick-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 0;
+}
+.quick-grid p {
+  margin: 0;
+}
+
+.quick-grid-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #999;
+  padding: 0.3rem;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.quick-grid-group:hover {
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: #777;
+}
+
+.one-column {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2px;
+  margin: 0 1rem;
+}
+
+.three-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2px;
+}
+
+.quick-grid-item {
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
 .form-intro {
   margin-bottom: 3rem;
 }
